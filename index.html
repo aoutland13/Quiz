@@ -126,14 +126,14 @@
       }
 
       let message = `You scored ${total} point${total !== 1 ? 's' : ''}. `;
-      if (total <= 2) {
-        message += "You exhibit minimal conspiratorial thinking.";
-      } else if (total <= 5) {
-        message += "You show mild conspiratorial inclination.";
-      } else if (total <= 7) {
-        message += "You hold a strong conspiratorial worldview.";
+      if (total <= 1) {
+        message += "Congrats, you are basically a normie! Tier 0.";
+      } else if (total <= 3) {
+        message += "Hmmm, you have a few alternative ideas. Maybe just keep them to youself in the office. Tier 1.";
+      } else if (total <= 6) {
+        message += "Oh, so John can go on for 10 minutes about his precious Super Bowl, but you make one innocent reference to WHO is REALLY running things and that makes YOU the asshole at the baby shower?! WAKE UP SHEEPLE! Tier 2.";
       } else {
-        message += "You are highly conspiratorial and reject foundational consensus knowledge.";
+        message += "Car. Job. House. Wife. You know the true skeptic must sacrifice everything for the truth.";
       }
 
       resultDiv.innerText = message;
